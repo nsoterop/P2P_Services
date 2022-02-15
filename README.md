@@ -11,7 +11,7 @@
 3. Install dependencies:
     `npm install`
 
-4. Install expo go app on mobile phone
+4. Install "Expo Go" app on mobile phone from playstore or apple store
 
 5. Add new file to root project directory named ".env" and message me on discord for file contents
 
