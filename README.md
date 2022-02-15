@@ -9,7 +9,7 @@
     `npm install -g expo-cli`
     
 3. Install dependencies:
-    `npm install
+    `npm install`
 
 4. Install expo go app on mobile phone
 
