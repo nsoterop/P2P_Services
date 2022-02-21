@@ -1,5 +1,5 @@
-import { StyleSheet, Image, Text, View, SafeAreaView } from 'react-native'
-import React, { useEffect, useState } from 'react'
+import { Text, View, SafeAreaView, TouchableOpacity } from 'react-native'
+import React from 'react'
 import tw from "tailwind-react-native-classnames"
 import NavOptions from '../components/NavOptions'
 import { GooglePlacesAutocomplete } from 'react-native-google-places-autocomplete'
@@ -7,7 +7,7 @@ import { GOOGLE_MAPS_APIKEY } from "@env"
 import { useDispatch } from 'react-redux'
 import { setDestination, setOrigin } from '../slices/navSlice'
 import NavFavorites from '../components/NavFavorites'
-import * as Location from 'expo-location';
+import { Icon } from 'react-native-elements/dist/icons/Icon'
 
 const HomeScreen = () => {
   const dispatch = useDispatch();
@@ -43,9 +43,14 @@ const HomeScreen = () => {
   return (
     <SafeAreaView style={tw`bg-white h-full`}>
       <View style={tw`p-5`}>
-        <Text style={tw`text-4xl pt-3 pb-5 font-semibold text-black`}
-        >App</Text>
+        <View>
+          <Text style={tw`text-4xl pt-3 pb-5 font-semibold text-black`}>App</Text>
 
+          <TouchableOpacity 
+            style={tw`bg-blue-300 absolute right-2 z-50 p-3 rounded-full shadow-lg`}>
+            <Icon name="person" color={"white"}/>
+          </TouchableOpacity>
+        </View>
          
         <GooglePlacesAutocomplete
           styles = {{

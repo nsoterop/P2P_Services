@@ -45,8 +45,8 @@ const Map = () => {
         initialRegion = {{
             latitude: origin.location.lat,
             longitude: origin.location.lng,
-            latitudeDelta: 0.005,
-            longitudeDelta: 0.005
+            latitudeDelta: 0.01,
+            longitudeDelta: 0.01
         }}
     >
         {origin && destination && (

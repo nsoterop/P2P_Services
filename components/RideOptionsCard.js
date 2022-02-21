@@ -9,19 +9,19 @@ import { selectTravelTimeInformation } from '../slices/navSlice'
 const data = [
     {
         id: "Uber-X-123",
-        title: "Uber X",
+        title: "Sedan",
         multiplier: 1,
         image: "https://links.papareact.com/3pn"
     },
     {
         id: "Uber-X-456",
-        title: "Uber XL",
+        title: "SUV",
         multiplier: 1.2,
         image: "https://links.papareact.com/5w8"
     },
     {
         id: "Uber-X-789",
-        title: "Uber LUX",
+        title: "Luxury",
         multiplier: 1.75,
         image: "https://links.papareact.com/7pf"
     }
@@ -39,7 +39,7 @@ const RideOptionsCard = () => {
         <View>
             <TouchableOpacity 
                 onPress = {() => navigation.navigate('NavigateCard')}
-                style = {tw`absolute top-3 left-5 z-50 p-3 rounded-full bg-black`}
+                style = {tw`absolute top-3 left-5 z-50 p-3 rounded-full bg-blue-500`}
             >
                 <Icon name = "chevron-left" type = "fontawesome" color = "white"/>
             </TouchableOpacity>
@@ -56,7 +56,7 @@ const RideOptionsCard = () => {
                     <TouchableOpacity
                         onPress = {() => setSelected(item)}
                         style = {tw`flex-row justify-between items-center px-10
-                            ${id === selected?.id && "bg-gray-200"}`}>
+                            ${id === selected?.id && "bg-blue-200"}`}>
                         <Image
                             style = {{
                                 width: 100,
@@ -85,7 +85,7 @@ const RideOptionsCard = () => {
         </View>
 
         <View>
-            <TouchableOpacity disabled={!selected} style={tw`bg-black py-3 m-3 rounded-md
+            <TouchableOpacity disabled={!selected} style={tw`bg-blue-500 py-3 m-3 rounded-md
                 ${!selected && "bg-gray-300"}`}>
                 <Text style={tw`text-center text-white text-xl`}>Choose {selected?.title}</Text>
             </TouchableOpacity>

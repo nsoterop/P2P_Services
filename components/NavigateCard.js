@@ -49,7 +49,7 @@ const NavigateCard = () => {
       <View style = {tw`flex-row bg-white justify-evenly py-2 mt-auto border-t border-gray-100 mb-4`}>
           <TouchableOpacity
             onPress={() => navigation.navigate("RideOptionsCard")}
-            style = {tw`flex flex-row justify-between bg-black w-24 px-4 py-3 rounded-full`}
+            style = {tw`flex flex-row justify-between bg-blue-500 w-24 px-4 py-3 rounded-full`}
           >
               <Icon name = "car" type = "font-awesome" color = "white" size = {16} />
               <Text style = {tw`text-white text-center`}>Rides</Text>
@@ -57,7 +57,7 @@ const NavigateCard = () => {
           </TouchableOpacity>
 
           <TouchableOpacity 
-            style = {tw`flex flex-row justify-between bg-black w-24 px-4 py-3 rounded-full`}
+            style = {tw`flex flex-row justify-between bg-blue-500 w-24 px-4 py-3 rounded-full`}
           >
               <Icon name = "fast-food-outline" type = "ionicon" color = "white" size = {16} />
               <Text style = {tw`text-white text-center`}>Eats</Text>
