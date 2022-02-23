@@ -1,9 +1,9 @@
-# UberClone
+# P2P Services
 
 ## Initial setup
 
 1. Clone repo:
-    `git clone https://github.com/nsoterop/UberClone.git`
+    `git clone https://github.com/nsoterop/P2P_Services.git`
     
 2. Install expo:
     `npm install -g expo-cli`
