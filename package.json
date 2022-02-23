@@ -17,7 +17,9 @@
     "@reduxjs/toolkit": "^1.7.2",
     "autoprefixer": "^10.4.2",
     "expo": "~44.0.0",
+    "expo-location": "~14.0.1",
     "expo-status-bar": "~1.2.0",
+    "node-fetch": "^3.2.0",
     "react": "17.0.1",
     "react-dom": "17.0.1",
     "react-native": "0.64.3",
@@ -32,8 +34,7 @@
     "react-native-vector-icons": "^9.0.0",
     "react-native-web": "0.17.1",
     "react-redux": "^7.2.6",
-    "tailwind-react-native-classnames": "^1.5.1",
-    "expo-location": "~14.0.1"
+    "tailwind-react-native-classnames": "^1.5.1"
   },
   "devDependencies": {
     "@babel/core": "^7.12.9",
