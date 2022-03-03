@@ -8,9 +8,11 @@ import { useDispatch } from 'react-redux'
 import { setDestination, setOrigin } from '../slices/navSlice'
 import NavFavorites from '../components/NavFavorites'
 import { Icon } from 'react-native-elements/dist/icons/Icon'
+import useAuth from '../hooks/useAuth'
 
 const HomeScreen = () => {
   const dispatch = useDispatch();
+  const { logout } = useAuth()
 {/*
   useEffect(() => {
     (async () => {
@@ -46,7 +48,8 @@ const HomeScreen = () => {
         <View>
           <Text style={tw`text-4xl pt-3 pb-5 font-semibold text-black`}>App</Text>
 
-          <TouchableOpacity 
+          <TouchableOpacity
+            onPress={logout}
             style={tw`bg-blue-300 absolute right-2 z-50 p-3 rounded-full shadow-lg`}>
             <Icon name="person" color={"white"}/>
           </TouchableOpacity>

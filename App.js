@@ -3,6 +3,8 @@ import { KeyboardAvoidingView, Platform } from 'react-native';
 import { Provider } from 'react-redux';
 import { store } from './store';
 import { SafeAreaProvider } from 'react-native-safe-area-context';
+import { LogBox } from "react-native";
+LogBox.ignoreAllLogs();
 import { NavigationContainer } from '@react-navigation/native';
 import { AuthProvider } from './hooks/useAuth';
 import StackNavigator from './StackNavigator';
